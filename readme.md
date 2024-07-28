@@ -530,6 +530,4 @@ The following stakeholders have reviewed and approved this test plan:
 - **Engineering Lead:** 
   - Name: [Name]
   - Signature: __________________
-
-____
   - Date: _______________
