@@ -5,8 +5,9 @@
 ## Table of Contents
 
 1. [Purpose and Scope](#purpose-and-scope)
-2. [Test Categories](#test-categories)
-3. [Detailed Test Cases](#detailed-test-cases)
+2. [Stakeholders](#stakeholders)
+3. [Test Categories](#test-categories)
+4. [Detailed Test Cases](#detailed-test-cases)
    - [Physical Attributes](#physical-attributes)
    - [Performance](#performance)
    - [Durability](#durability)
@@ -15,16 +16,27 @@
    - [Environmental Impact](#environmental-impact)
    - [Packaging Verification](#packaging-verification)
    - [Phalange Analysis](#phalange-analysis)
-4. [Sample Files and Data](#sample-files-and-data)
+5. [Sample Files and Data](#sample-files-and-data)
    - [Sample CSV Data](#sample-csv-data)
    - [Sample Video Files](#sample-video-files)
    - [Sample PDF Files](#sample-pdf-files)
-5. [User Journeys](#user-journeys)
+6. [User Journeys](#user-journeys)
+7. [Sign-Off](#sign-off)
 
 ## Purpose and Scope
 
 - **Purpose:** Ensure the Pencil Master 2.0 meets all required specifications and quality standards for various professional use cases.
 - **Scope:** Includes all aspects of the Pencil Master 2.0, from physical properties to performance during use, focusing on specific professional needs.
+
+## Stakeholders
+
+- **Project Manager:** Responsible for overall project delivery and ensuring milestones are met.
+- **Product Owner:** Ensures the product meets the market requirements and customer needs.
+- **Quality Assurance Team:** Conducts the tests and ensures the product meets quality standards.
+- **Legal Team:** Ensures the product and packaging meet all legal requirements.
+- **Marketing Team:** Ensures the branding and packaging align with marketing strategies.
+- **Design Team:** Provides design specifications and ensures the product meets aesthetic standards.
+- **Engineering Team:** Provides technical specifications and supports the testing process.
 
 ## Test Categories
 
@@ -218,7 +230,9 @@
 #### **toxicity_report.csv**
 
 ```csv
-Material,Component,Test,Result,Units,Threshold,Pass/Fail
+Material
+
+,Component,Test,Result,Units,Threshold,Pass/Fail
 Graphite,Lead,Toxicity,0.01,ppm,0.05,Pass
 Wood,Formaldehyde,Toxicity,0.02,ppm,0.1,Pass
 Eraser,Phthalates,Toxicity,0.01,ppm,0.1,Pass
@@ -227,9 +241,7 @@ Paint,Cadmium,Toxicity,0.005,ppm,0.01,Pass
 
 #### **phalange_data.csv**
 
-```
-
-csv
+```csv
 Timestamp,Finger,Joint,Angle,Force
 0.00,Index,Proximal,10.5,0.2
 0.01,Index,Proximal,11.0,0.2
@@ -365,3 +377,42 @@ graph TD;
 6. **Final Design**
    - Finalize the detailed engineering design.
    - Verify that all technical details are clear and precise.
+
+## Sign-Off
+
+The following stakeholders have reviewed and approved this test plan:
+
+- **Project Manager:** 
+  - Name: [Name]
+  - Signature: ______________________
+  - Date: _______________
+
+- **Product Owner:** 
+  - Name: [Name]
+  - Signature: ______________________
+  - Date: _______________
+
+- **Quality Assurance Lead:** 
+  - Name: [Name]
+  - Signature: ______________________
+  - Date: _______________
+
+- **Legal Representative:** 
+  - Name: [Name]
+  - Signature: ______________________
+  - Date: _______________
+
+- **Marketing Lead:** 
+  - Name: [Name]
+  - Signature: ______________________
+  - Date: _______________
+
+- **Design Lead:** 
+  - Name: [Name]
+  - Signature: ______________________
+  - Date: _______________
+
+- **Engineering Lead:** 
+  - Name: [Name]
+  - Signature: ______________________
+  - Date: _______________
