@@ -8,7 +8,18 @@
 2. [Stakeholders](#stakeholders)
 3. [Test Categories](#test-categories)
 4. [Detailed Test Cases](#detailed-test-cases)
+   - [Physical Attributes](#physical-attributes)
+   - [Performance](#performance)
+   - [Durability](#durability)
+   - [User Experience](#user-experience)
+   - [Safety](#safety)
+   - [Environmental Impact](#environmental-impact)
+   - [Packaging Verification](#packaging-verification)
+   - [Phalange Analysis](#phalange-analysis)
 5. [Sample Files and Data](#sample-files-and-data)
+   - [Sample CSV Data](#sample-csv-data)
+   - [Sample Video Files](#sample-video-files)
+   - [Sample PDF Files](#sample-pdf-files)
 6. [User Journeys](#user-journeys)
 7. [Sign-Off](#sign-off)
 
@@ -20,7 +31,7 @@
 ## Stakeholders
 
 - **Project Manager:** Responsible for overall project delivery and ensuring milestones are met.
-- **Product Owner:** Ensures the product meets market requirements and customer needs.
+- **Product Owner:** Ensures the product meets the market requirements and customer needs.
 - **Quality Assurance Team:** Conducts the tests and ensures the product meets quality standards.
 - **Legal Team:** Ensures the product and packaging meet all legal requirements.
 - **Marketing Team:** Ensures the branding and packaging align with marketing strategies.
@@ -40,50 +51,177 @@
 
 ## Detailed Test Cases
 
-```csv
-ID,Category,Test Name,Type,Tools,Steps,Expected Result
-TC001,Physical Attributes,Measure Length,Physical Measurement,Precision ruler or digital caliper,Measure the length using the specified tools.,Length within 7.5 inches ± 0.1 inches.
-TC002,Physical Attributes,Measure Diameter,Physical Measurement,Digital caliper,Measure the diameter at multiple points.,Diameter consistent and within 7 mm ± 0.2 mm.
-TC003,Physical Attributes,Weight Check,Physical Measurement,Precision scale,Weigh the pencil using a precision scale.,Weight within 5 grams ± 0.5 grams.
-TC004,Performance,Writing Smoothness,User Testing, Automated Testing,High-speed camera, robotic arm,Write on various paper types and analyze smoothness.,Smooth writing without skipping.
-TC005,Performance,Graphite Flow Consistency,User Testing, Automated Testing,High-speed camera, robotic arm,Continuous writing and analysis.,Consistent graphite flow without breaks.
-TC006,Performance,Darkness of Mark,User Testing, Automated Testing,Image analysis software,Write samples and compare against standard.,Mark within specified darkness range.
-TC007,Durability,Graphite Breakage Resistance,Physical Testing,Universal testing machine (UTM),Apply pressure and assess breakage.,Graphite resists breaking under normal pressure.
-TC008,Durability,Wood Casing Strength,Physical Testing,Universal testing machine (UTM),Apply pressure and check for splintering.,Wood does not splinter or break under normal use.
-TC009,Durability,Impact Resistance,Physical Testing,Drop tester,Drop the pencil from a specified height and inspect.,No significant damage from standard drops.
-TC010,Durability,Long-Term Use Consistency,User Testing,High-speed camera,Regular use and evaluation.,Maintains performance over time.
-TC011,User Experience,Grip Comfort,User Testing,High-speed camera,Prolonged use and assessment.,Comfortable grip.
-TC012,User Experience,Balance and Handling,User Testing,High-speed camera,Various tasks and handling.,Well-balanced and easy to handle.
-TC013,Safety,Toxicity Check,Chemical Analysis,Mass spectrometer, gas chromatograph,Analyze materials.,Materials certified non-toxic.
-TC014,Safety,Physical Safety,Visual and Tactile Inspection,Manual inspection,Inspect for hazards.,Free of physical hazards.
-TC015,Environmental Impact,Sustainability of Wood,Document Review,Manual review,Review certifications and conduct audits.,Wood from sustainable sources.
-TC016,Environmental Impact,Recyclability,Material Composition Analysis,Material analyzer,Analyze composition and recycling processes.,Materials recyclable.
-TC017,Environmental Impact,Eco-friendliness of Paint and Eraser,Environmental Impact Analysis,Environmental impact analysis software,Perform analysis.,Eco-friendly materials.
-TC018,Packaging Verification,Legal Disclaimers and Branding Details,Document Review, Visual Inspection,Manual review,Compare packaging with specifications.,Includes all required disclaimers and details.
-TC019,Phalange Analysis,Phalange Analysis After Usage,Biomechanical Analysis,High-speed camera, motion capture sensors,Record and analyze hand movements.,Minimal strain on phalanges.
-TC020,Sample Files and Data,Review Toxicity Report,Document Review,Manual review,Check the toxicity report CSV file.,All materials are below the toxicity threshold.
-TC021,Sample Files and Data,Analyze Phalange Data,Data Analysis,Statistical software,Analyze phalange data CSV file for force and angle.,Minimal force and consistent angles for comfort.
-TC022,Sample Files and Data,Review Video Files,Visual Inspection,Video player,Review video files for writing smoothness, graphite flow, and grip comfort.,Videos demonstrate expected results.
-TC023,Sample Files and Data,Verify Supplier Certifications,Document Review,Manual review,Review supplier certifications PDF file.,Certifications confirm sustainable sourcing.
-TC024,Sample Files and Data,Check Packaging Photos,Visual Inspection,Image viewer,Review packaging photos ZIP file.,Packaging meets branding and legal requirements.
-TC025,User Journeys,Artist Workflow: Sketching,User Testing,Pencil, various paper types,Use the pencil to create initial sketches on different paper types.,Smooth lines, no skipping.
-TC026,User Journeys,Artist Workflow: Shading,User Testing,Pencil, various paper types,Apply varying pressure to create shading effects.,Consistent shading without smudging.
-TC027,User Journeys,Artist Workflow: Detailing,User Testing,Pencil, various paper types,Use the pencil for intricate details.,Precise lines with good control.
-TC028,User Journeys,Artist Workflow: Final Touches,User Testing,Pencil, various paper types,Add highlights and finishing strokes.,Maintains sharpness, no breakage.
-TC029,User Journeys,Artist Workflow: Review Artwork,User Testing,Pencil, completed artwork,Assess the overall quality of the drawing.,High-quality, consistent graphite flow.
-TC030,User Journeys,Architect Workflow: Initial Draft,User Testing,Pencil, drafting paper,Create rough design sketches.,Clear and precise lines.
-TC031,User Journeys,Architect Workflow: Technical Drawing,User Testing,Pencil, drafting paper,Develop detailed architectural plans.,Accurate and sharp lines.
-TC032,User Journeys,Architect Workflow: Annotating Plans,User Testing,Pencil, drafted plans,Add notes and dimensions.,Readable and clear annotations.
-TC033,User Journeys,Architect Workflow: Review with Team,User Testing,Pencil, drafted plans,Present drafts and make quick adjustments.,Easy to modify and update plans.
-TC034,User Journeys,Architect Workflow: Revisions,User Testing,Pencil, drafted plans,Incorporate feedback and refine plans.,Consistent performance over revisions.
-TC035,User Journeys,Architect Workflow: Final Blueprint,User Testing,Pencil, final plans,Finalize the detailed architectural plans.,Clear and precise final plans.
-TC036,User Journeys,Engineer Workflow: Concept Design,User Testing,Pencil, engineering paper,Create preliminary engineering sketches.,Handles initial design work well.
-TC037,User Journeys,Engineer Workflow: Detailed Engineering,User Testing,Pencil, engineering paper,Develop detailed technical drawings.,Precise technical details.
-TC038,User Journeys,Engineer Workflow: Prototyping,User Testing,Pencil, engineering paper,Use the drawings to create prototypes.,Durable during prototype creation.
-TC039,User Journeys,Engineer Workflow: Testing and Analysis,User Testing,Pencil, engineering paper,Analyze prototypes and make notes.,Clear and precise annotations.
-TC040,User Journeys,Engineer Workflow: Iteration,User Testing,Pencil, engineering paper,Refine designs based on test results.,Consistent performance during iterations.
-TC041,User Journeys,Engineer Workflow: Final Design,User Testing,Pencil, engineering paper,Finalize the detailed engineering design.,Clear and precise final design.
-```
+### Physical Attributes
+
+1. **Measure Length**
+   - **Type of Test:** Physical Measurement
+   - **Sample Files:** None
+   - **Machine Used:** Precision ruler or digital caliper
+   - **Steps:**
+     - Use a precise ruler or caliper to measure the length.
+   - **Expected Result:** Length should be within the specified range (e.g., 7.5 inches ± 0.1 inches).
+
+2. **Measure Diameter**
+   - **Type of Test:** Physical Measurement
+   - **Sample Files:** None
+   - **Machine Used:** Digital caliper
+   - **Steps:**
+     - Use a caliper to measure the diameter at multiple points along the pencil.
+   - **Expected Result:** Diameter should be consistent and within the specified range (e.g., 7 mm ± 0.2 mm).
+
+3. **Weight Check**
+   - **Type of Test:** Physical Measurement
+   - **Sample Files:** None
+   - **Machine Used:** Precision scale
+   - **Steps:**
+     - Use a precision scale to weigh the pencil.
+   - **Expected Result:** Weight should be within the specified range (e.g., 5 grams ± 0.5 grams).
+
+### Performance
+
+4. **Writing Smoothness**
+   - **Type of Test:** User Testing, Automated Testing
+   - **Sample Files:** `writing_smoothness_video.mp4`
+   - **Machine Used:** High-speed camera for recording, robotic arm for automated writing
+   - **Steps:**
+     - Write on various paper types and evaluate.
+     - Record the writing session and analyze the smoothness.
+   - **Expected Result:** Writing should be smooth without skipping.
+
+5. **Graphite Flow Consistency**
+   - **Type of Test:** User Testing, Automated Testing
+   - **Sample Files:** `graphite_flow_video.mp4`
+   - **Machine Used:** High-speed camera for recording, robotic arm for automated writing
+   - **Steps:**
+     - Continuous writing for a specified period.
+     - Record the writing session and analyze graphite flow.
+   - **Expected Result:** Graphite should flow consistently without breaks.
+
+6. **Darkness of Mark**
+   - **Type of Test:** User Testing, Automated Testing
+   - **Sample Files:** None
+   - **Machine Used:** Image analysis software
+   - **Steps:**
+     - Write samples and compare against standard.
+   - **Expected Result:** Mark should be within the specified darkness range.
+
+### Durability
+
+7. **Graphite Breakage Resistance**
+   - **Type of Test:** Physical Testing
+   - **Sample Files:** None
+   - **Machine Used:** Universal testing machine (UTM)
+   - **Steps:**
+     - Apply pressure at different points and assess breakage.
+   - **Expected Result:** Graphite should resist breaking under normal pressure.
+
+8. **Wood Casing Strength**
+   - **Type of Test:** Physical Testing
+   - **Sample Files:** None
+   - **Machine Used:** Universal testing machine (UTM)
+   - **Steps:**
+     - Apply pressure and check for splintering or breaking.
+   - **Expected Result:** Wood should not splinter or break under normal use.
+
+9. **Impact Resistance**
+   - **Type of Test:** Physical Testing
+   - **Sample Files:** None
+   - **Machine Used:** Drop tester
+   - **Steps:**
+     - Drop the pencil from a specified height and inspect for damage.
+   - **Expected Result:** Pencil should not suffer significant damage from standard drops.
+
+10. **Long-Term Use Consistency**
+    - **Type of Test:** User Testing
+    - **Sample Files:** None
+    - **Machine Used:** High-speed camera for recording long-term use
+    - **Steps:**
+      - Regularly use the pencil for an extended period and evaluate performance.
+    - **Expected Result:** Pencil should maintain performance over time.
+
+### User Experience
+
+11. **Grip Comfort**
+    - **Type of Test:** User Testing
+    - **Sample Files:** `grip_comfort_video.mp4`
+    - **Machine Used:** High-speed camera for recording user feedback sessions
+    - **Steps:**
+      - Use the Pencil Master 2.0 for prolonged periods and assess comfort.
+      - Record user feedback and video sessions.
+    - **Expected Result:** Pencil should remain comfortable during use.
+
+12. **Balance and Handling**
+    - **Type of Test:** User Testing
+    - **Sample Files:** None
+    - **Machine Used:** High-speed camera for recording handling tests
+    - **Steps:**
+      - Perform various writing and drawing tasks.
+    - **Expected Result:** Pencil should be well-balanced and easy to handle.
+
+### Safety
+
+13. **Toxicity Check**
+    - **Type of Test:** Chemical Analysis
+    - **Sample Files:** `toxicity_report.csv`
+    - **Machine Used:** Mass spectrometer, gas chromatograph
+    - **Steps:**
+      - Perform chemical analysis of materials.
+    - **Expected Result:** Materials should be certified non-toxic.
+
+14. **Physical Safety**
+    - **Type of Test:** Visual and Tactile Inspection
+    - **Sample Files:** None
+    - **Machine Used:** None (manual inspection)
+    - **Steps:**
+      - Inspect for sharp edges, splinters, etc.
+    - **Expected Result:** Pencil should be free of physical hazards.
+
+### Environmental Impact
+
+15. **Sustainability of Wood**
+    - **Type of Test:** Document Review
+    - **Sample Files:** `supplier_certifications.pdf`
+    - **Machine Used:** None (manual review)
+    - **Steps:**
+      - Review supplier certifications and conduct audits.
+    - **Expected Result:** Wood should come from sustainable sources.
+
+16. **Recyclability**
+    - **Type of Test:** Material Composition Analysis
+    - **Sample Files:** None
+    - **Machine Used:** Material analyzer
+    - **Steps:**
+      - Analyze the composition and recycling processes.
+    - **Expected Result:** Pencil materials should be recyclable.
+
+17. **Eco-friendliness of Paint and Eraser**
+    - **Type of Test:** Environmental Impact Analysis
+    - **Sample Files:** None
+    - **Machine Used:** Environmental impact analysis software
+    - **Steps:**
+      - Perform environmental impact analysis.
+    - **Expected Result:** Paint and eraser should be eco-friendly.
+
+### Packaging Verification
+
+18. **Legal Disclaimers and Branding Details**
+    - **Type of Test:** Document Review, Visual Inspection
+    - **Sample Files:** `packaging_specs.pdf`, `packaging_photos.zip`
+    - **Machine Used:** None (manual review)
+    - **Steps:**
+      - Compare the packaging against the provided specifications.
+    - **Expected Result:** Packaging should include all required legal disclaimers and branding details.
+
+### Phalange Analysis
+
+19. **Phalange Analysis After Usage**
+    - **Type of Test:** Biomechanical Analysis
+    - **Sample Files:** `phalange_analysis_video.mp4`, `phalange_data.csv`
+    - **Machine Used:** High-speed camera for recording hand movements, motion capture sensors
+    - **Steps:**
+      - Record the hand movements of users while using the Pencil Master 2.0.
+      - Analyze the impact on phalanges (finger bones) using motion capture and biomechanical analysis software.
+    - **Expected Result:** Minimal strain on phalanges, ensuring comfortable use over extended periods.
 
 ## Sample Files and Data
 
@@ -92,7 +230,9 @@ TC041,User Journeys,Engineer Workflow: Final Design,User Testing,Pencil, enginee
 #### **toxicity_report.csv**
 
 ```csv
-Material,Component,Test,Result,Units,Threshold,Pass/Fail
+Material
+
+,Component,Test,Result,Units,Threshold,Pass/Fail
 Graphite,Lead,Toxicity,0.01,ppm,0.05,Pass
 Wood,Formaldehyde,Toxicity,0.02,ppm,0.1,Pass
 Eraser,Phthalates,Toxicity,0.01,ppm,0.1,Pass
@@ -114,9 +254,7 @@ Timestamp,Finger,Joint,Angle,Force
 ### Sample Video Files
 
 - **writing_smoothness_video.mp4**: A video recording of a user writing with the Pencil Master 2.0 on different types of paper.
-- **graphite_flow_video.mp4
-
-**: A video recording of continuous writing with the Pencil Master 2.0 to analyze graphite flow consistency.
+- **graphite_flow_video.mp4**: A video recording of continuous writing with the Pencil Master 2.0 to analyze graphite flow consistency.
 - **grip_comfort_video.mp4**: A video recording of users using the Pencil Master 2.0 for extended periods to assess grip comfort.
 - **phalange_analysis_video.mp4**: A video recording of the hand movements of users while using the Pencil Master 2.0, used for biomechanical analysis.
 
